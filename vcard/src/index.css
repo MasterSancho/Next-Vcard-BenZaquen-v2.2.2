@@ -1,0 +1,226 @@
+:root {
+	--max-width: 576px;
+}
+
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+html,
+body {
+	max-width: var(--max-width);
+	margin: 0 auto;
+	overflow-x: hidden;
+}
+
+body {
+	background-color: rgb(33, 10, 160);
+	font-size: 16px;
+	font-family: Arial, Helvetica, sans-serif;
+	background-image: url(/public/assets/background.jpg);
+	background-attachment: fixed;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+body::-webkit-scrollbar {
+	display: none;
+}
+
+.modalBgColor {
+	background-color: rgb(33, 10, 160);
+}
+
+.objectFitCover {
+	object-fit: cover;
+}
+
+.objectFitContain {
+	object-fit: contain;
+	width: 100%;
+	height: 100%;
+}
+
+.whiteSpace-PreWrap {
+	white-space: pre-wrap;
+}
+
+.bgTransperent-1 {
+	background-color: rgba(0, 0, 0, 0.1) !important;
+}
+
+.bgTransperent-2 {
+	background-color: rgba(0, 0, 0, 0.2) !important;
+}
+
+.bgTransperent-3 {
+	background-color: rgba(255, 255, 255, 0.3) !important;
+}
+
+.bgTransperent-5 {
+	background-color: rgba(0, 0, 0, 0.5) !important;
+}
+
+.formMaxWidth {
+	max-width: 300px;
+	margin: auto;
+}
+
+.boxShadowWhiteBot-10 {
+	box-shadow: 0px 0px 10px 0px #ffffff;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+.cursorPointer {
+	cursor: pointer;
+}
+
+.maxHeight-1 {
+	max-height: 0.25rem;
+}
+
+.maxHeight-2 {
+	max-height: 0.5rem;
+}
+
+.maxHeight-3 {
+	max-height: 1rem;
+}
+
+.maxHeight-4 {
+	max-height: 1.5rem;
+}
+
+.maxHeight-5 {
+	max-height: 2rem;
+}
+
+.maxHeight-6 {
+	max-height: 2.5rem;
+}
+
+.maxHeight-7 {
+	max-height: 3rem;
+}
+
+.lineHeight-1 {
+	line-height: 1;
+}
+
+.widthClamp-142 {
+	width: clamp(1rem, 4vw, 2rem);
+}
+
+.widthClamp-172 {
+	width: clamp(1rem, 7vw, 2rem);
+}
+
+.widthClamp-173 {
+	width: clamp(1rem, 7vw, 3rem);
+}
+
+.widthClamp-1542 {
+	width: clamp(1.5rem, 4vw, 2rem);
+}
+
+.fsClamp-08313 {
+	font-size: clamp(0.8rem, 3vw, 1.3rem);
+}
+
+.fsClamp-08413 {
+	font-size: clamp(0.8rem, 4vw, 1.3rem);
+}
+
+.fsClamp-08416 {
+	font-size: clamp(0.8rem, 4vw, 1.6rem);
+}
+
+.fsClamp-152 {
+	font-size: clamp(1rem, 5vw, 2rem);
+}
+
+.fsClamp-162 {
+	font-size: clamp(1rem, 6vw, 2rem);
+}
+
+.fsClamp-1725 {
+	font-size: clamp(1rem, 7vw, 2.5rem);
+}
+
+@keyframes zoomInOut {
+	0% {
+		transform: scale(0);
+	}
+	100% {
+		transform: scale(1);
+	}
+}
+
+.animationZoomInOut {
+	animation: zoomInOut 1s ease-in-out forwards;
+	transform-origin: center;
+}
+
+.loadingSpinnerContainer {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: rgba(0, 0, 0, 0.5);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+	z-index: 5000;
+	outline: none;
+}
+
+.loadingSpinner {
+	width: 64px;
+	height: 64px;
+	border: 8px solid;
+	border-color: #c0c0c0 transparent #c0c0c0 transparent;
+	border-radius: 50%;
+	animation: spin 0.5s linear infinite;
+}
+
+@keyframes spin {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+.sr-only {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	margin: -1px;
+	overflow: hidden;
+	clip: rect(0, 0, 0, 0);
+	border: 0;
+}
+
+.whitePlaceholder::-webkit-input-placeholder {
+	color: white;
+}
+.whitePlaceholder:-moz-placeholder {
+	color: white;
+}
+.whitePlaceholder::-moz-placeholder {
+	color: white;
+}
+.whitePlaceholder:-ms-input-placeholder {
+	color: white;
+}

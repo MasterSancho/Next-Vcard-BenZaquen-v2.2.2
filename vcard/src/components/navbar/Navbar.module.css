@@ -1,0 +1,64 @@
+.fixedResponsive {
+	max-width: 576px;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+}
+
+.customModalHeader {
+	display: flex;
+	justify-content: center;
+	background-image: url(/public/assets/background.jpg);
+	background-attachment: fixed;
+	background-position: top center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.customModalTitle {
+	flex-grow: 1;
+	text-align: center;
+	/* text-decoration: underline; */
+}
+
+.customModalBody {
+	background-image: url(/public/assets/background.jpg);
+	background-attachment: fixed;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	text-align: center;
+}
+
+.modalAnimateIn {
+	animation: slideInRight 0.3s forwards;
+}
+
+.modalAnimateOut {
+	animation: slideOutRight 0.3s forwards;
+}
+
+@keyframes slideInRight {
+	from {
+		transform: translateX(100%);
+	}
+	to {
+		transform: translateX(0);
+	}
+}
+
+@keyframes slideOutRight {
+	from {
+		transform: translateX(0);
+	}
+	to {
+		transform: translateX(100%);
+	}
+}
+
+@media (min-width: 577px) {
+	.fixedResponsive {
+		top: 0;
+		bottom: auto;
+	}
+}

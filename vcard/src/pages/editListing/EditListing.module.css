@@ -1,0 +1,33 @@
+.createListing_Desc {
+	height: 200px;
+	background-color: rgba(0, 0, 0, 0.2) !important;
+	color: white !important;
+}
+
+.thumbnail {
+	height: 50px;
+	background-color: rgba(0, 0, 0, 0.2) !important;
+	color: white !important;
+}
+
+.submitBtn {
+	background-color: rgba(0, 0, 0, 0.5) !important;
+	width: 50%;
+	margin: auto;
+}
+
+.submitBtn:hover {
+	background-color: rgba(0, 0, 0, 0.2) !important;
+	color: white !important;
+	width: 50%;
+	margin: auto;
+}
+
+.bgTransperent {
+	background-color: rgba(0, 0, 0, 0.2) !important;
+	color: white !important;
+}
+
+.bgTransperent option {
+	background-color: black;
+}

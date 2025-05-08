@@ -1,0 +1,6 @@
+.logoImage {
+	object-fit: cover;
+	width: 100%;
+	height: auto;
+	max-width: 150px;
+}
